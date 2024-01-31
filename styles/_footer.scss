@@ -1,0 +1,69 @@
+.footer {
+  background-color: #767cad;
+  padding: 20px 0;
+  text-align: center;
+  height: auto;
+  font-size: 20px;
+
+  &__container {
+    max-width: 2000px;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logo {
+    flex: 1;
+    img {
+      max-width: 100%;
+      height: auto;
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__icon {
+    flex: 1;
+    margin: 10px 0;
+    a {
+      margin: 0 10px;
+      color: black;
+      &:hover {
+        color: #4eb299;
+        cursor: pointer;
+        transition: all 0.3s;
+      }
+    }
+  }
+
+  &__about {
+    flex: 2;
+    margin: 10px 0;
+    a {
+      margin-right: 20px;
+      text-decoration: none;
+      color: #333;
+      transition: color 0.3s ease;
+      &:hover {
+        cursor: pointer;
+        text-decoration: underline red;
+        color: #4eb299;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__button {
+    flex: 1;
+    margin-top: 10px;
+    .button {
+      width: 100%;
+    }
+  }
+}
